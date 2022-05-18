@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="it_IT">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Villa Doveri | La tua vacanza relax a Ceppeto.</title>
+  <meta name="description" content="Villa sita in posizione unica dalla vista suggestiva sui vigneti di Ceppeto. Goditi una vacanza di vero relax.">
+
+  <!-- altri meta tag -->
+  <meta name="author" content="Mauro Visintin">
+  <meta name ="copyright" content="Mauro Visintin" />
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="canonical" href="https://maurovisi.github.io/villaDoveri/index.php">
+
+  <!-- facebook open graph -->
+  <meta property="og:url"                content="https://maurovisi.github.io/villaDoveri" />
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content="Villa Doveri | Vero Relax Immersi nella Natura." />
+  <meta property="og:description"        content="Villa sita in posizione unica dalla vista suggestiva sui vigneti di Ceppeto. Goditi una vacanza di vero relax." />
+  <meta property="og:image"              content="https://maurovisi.github.io/villaDoveri/img/social.jpg" />
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Satisfy&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/79b8b57e62.js" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- custom for media queries and orientation -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      let altezza = window.screen.height;
+      let larghezza = window.screen.width;
+      mQuery(larghezza,altezza);
+    });
+
+    function mQuery(larghezza,altezza){
+      if (larghezza < 435 || altezza < 435){  
+        verticalOrientation("media300","media300h","h5_300","h5_300h");
+      } else {
+        orizzOrientation("media300","media300h","h5_300","h5_300h");
+      }
+    }
+
+    function verticalOrientation(id1, id2, id3, id4){
+      document.getElementById(id1).style.display = "none";
+      document.getElementById(id2).style.display = "block";        
+      //$('#media300').hide();
+      //$('#media300h').show();
+      document.getElementById(id3).style.display = "none";
+      document.getElementById(id4).style.display = "block";
+      document.getElementById(id4).style.fontSize  = 'small';
+    }
+
+    function orizzOrientation(id1, id2, id3, id4){
+      document.getElementById(id1).style.display = "block";
+      document.getElementById(id2).style.display = "none";
+      //$('#media300').css('display','block');
+      //$('#media300h').css('display','none');
+      document.getElementById(id3).style.display = "block";
+      document.getElementById(id4).style.display = "none";
+      document.getElementById(id3).style.fontSize  = 'larger';
+    }
+
+    function displayDimensions(){      
+      let larghezza = window.screen.width;
+      let altezza = window.screen.height;
+      let arr = [larghezza,altezza];
+      return arr;
+    }
+
+    window.addEventListener('orientationchange', function() {
+      //document.getElementById("DevOrientation").innerHTML = window.orientation;
+      //console.log(window.orientation);
+      handleOrientation(window.orientation);
+    }, false);
+
+    function handleOrientation(event) {      
+      /*
+      document.getElementById("absolute").innerHTML = event.absolute;
+      document.getElementById("alpha").innerHTML    = event.alpha;
+      document.getElementById("beta").innerHTML     = event.beta;
+      document.getElementById("gamma").innerHTML    = event.gamma;
+      document.getElementById("image").style.transform = "rotate(" + event.gamma + "deg) rotate3d(1,0,0," + (event.beta*-1) + "deg)";
+      */
+
+      // recupero anche le dimensioni dello schermo
+      let dimensions = displayDimensions();
+
+      if (event == 0) {
+        mQuery(dimensions[0],dimensions[1]);
+        //document.getElementById("DevOrientation").innerHTML = event;
+      } else {
+        mQuery(dimensions[0],dimensions[1]);
+        //document.getElementById("DevOrientation").innerHTML = event;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper  white">
+        <a href="#" class="brand-logo">Villa Doveri</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="txteffects2"><a href="#servizio">Servizi</a></li>
+          <li class="txteffects2"><a href="#registrazione">Registrati</a></li>
+          <li class="txteffects2"><a href="#ospita">Location</a></li>
+		  <li class="txteffects2"><a href="#">Info-Ospiti</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li class="txteffects2"><a href="#servizio">Servizi</a></li>
+    <li class="txteffects2"><a href="#registrazione">Registrati</a></li>
+    <li class="txteffects2"><a href="#ospita">Location</a></li>
+	<li class="txteffects2"><a href="#">Info-Ospiti</a></li>
+  </ul>
+  
+  <!-- Scroll to top button -->
+  <a id="button"></a>
+
+  <!-- intro -->
+  <div id="index-banner" class="parallax-container">
+    <div class="section-intro no-pad-bot">
+      <div class="container top-distance">
+        <br><br>
+        <h1 class="header center white-text" id="media300">Vero Relax Immersi nel Verde</h1>
+        <h1 class="header center white-text" id="media300h">Vero Relax</h1>
+        <div class="row center">
+          <h5 class="header col s12 light" id="h5_300">Prenota Subito la Tua Vacanza Relax in modo Facile e Veloce.</h5>
+          <h5 class="header col s12 light" id="h5_300h">Prenota Subito la Tua Vacanza Relax</h5>
+        </div>
+
+        <!-- <p id="DevOrientation"></p> -->
+
+        <div class="row center btn-space">
+          <a href="#servizio" class="btn-large waves-effect waves-light red lighten-1 txteffects">Prenota Subito!</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background.jpg" alt="vista villa Doveri"></div>
+  </div>
+
+
+  <!-- servizi -->
+  <div class="container" id="servizio">
+    <div class="section">
+      <div class="col-servizio">
+
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center red-text text-lighten-1"><i class="material-icons">map</i></h2>
+              <h5 class="center">Tours Enogastronomici.</h5>
+              <br>
+              <h5 class="center red-text text-lighten-1 light">Lasciati guidare in tours organizzati o avventurati alla scoperta delle specialit&aacute; toscane.</h5>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center red-text text-lighten-1"><i class="material-icons">my_location</i></h2>
+              <h5 class="center">Visitare Posti Unici.</h5>
+              <br>
+              <h5 class="center red-text text-lighten-1 light">Luoghi bellissimi da visitare, musei, chiese e paesi tipici dove il tempo sembra essersi fermato.</h5>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center red-text text-lighten-1"><i class="material-icons">home</i></h2>
+              <h5 class="center">Soggiorno in Villa.</h5>
+              <br>
+              <h5 class="center red-text text-lighten-1 light">Ambienti raffinati, ampie camere, piscina e tutte le comodit&aacute; in assoluto relax con la massima privacy che solo da noi potrai trovare.</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- registrazione -->
+  <div class="parallax-container valign-wrapper" id="registrazione">
+    <div class="section-registrazione no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <i class="material-icons registrazione-icon">flight</i>
+          <h3 class="header col s12 light">Bisogno di Relax e di staccare la spina dalla routine quotidiana?</h3>
+          <h5 class="col s12 registrazione-subtitle txteffects">Vieni a trovarci per la tua vacanza o anche solo per un weekend di relax.</h5>
+		  <h5 class="col s12 registrazione-subtitle txteffects">Registrati per ricevere nuove offerte dedicate.</h5>
+          <div class="row">
+            <div class="input-field col s12 l6 offset-l3">
+
+              <!-- Begin Mailchimp Signup Form -->              
+              <div id="mc_embed_signup">
+                <form action="https://redbnb.us19.list-manage.com/subscribe/post?u=739925cfe2e6966ad62e00a30&amp;id=051f40fe37" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                      <input type="email" value="" name="EMAIL" class="email validate white center black-text" id="mce-EMAIL" placeholder="Inserisci qui la tua email!" required>
+                    </div>
+                    <button class="btn btn-registrazione waves-effect waves-light red lighten-1 txteffects" type="submit" name="action">Voglio Registrarmi!</button>
+                </form>
+              </div>
+              <!--End mc_embed_signup-->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background2.jpg" alt="background relax place"></div>
+  </div>
+
+  <!-- location -->
+  <div class="container" id="ospita">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <i class="material-icons ospita-icon red-text text-lighten-1">place</i>
+          <h3>Vieni a trovarci troverai ospitalit&aacute; e posti unici</h3>
+          
+		    <!-- google map -->
+			<div class="container">
+				<div class="section" id="where">
+					<iframe class="iconBlockBorder hoverable" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.74040479877414!2d13.46283267159124!3d45.95281669233269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bac1f77982a37%3A0x8f26397e2dffc940!2sVia%20Ara%20Pacis%2C%20521%2C%2034071%20Cormons%20GO!5e0!3m2!1sit!2sit!4v1611713424650!5m2!1sit!2sit" width="100%" height="450" allowfullscreen="true" loading="lazy" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+			</div>
+		  
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12 center">
+          <h5 class="white-text">Contattaci</h5>
+          <a href="mailto:mconsulting2.0@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.facebook.com/maurovisintin85" target="_blank" class="social-icon"><i class="fab fa-facebook-square"></i></a>
+          <a href="" target="_blank" class="social-icon"><i class="fab fa-twitter-square"></i></a>
+        </div>        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container footer-dimensions">
+	  Made by <a class="brown-text text-lighten-3" href="https://www.mvcyber.it" target="blank" rel="noopener">Mauro Visintin</a> |
+                <a href="privacy.html" target="_blank" rel="noopener">Privacy e Policy</a> | site map |
+                Copyright &copy; Villa Doveri 2022
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+
+  <script> 
+    (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
+  </script>
+  
+  <script>
+        var btn = $('#button');
+
+        $(window).scroll(function() {
+            if (($(window).scrollTop() == $(document).height() - $(window).height()) || ($(window).scrollTop() == $(document).height())) {
+                $('#button').css({ 'bottom': 70, 'right': 35 });
+            } else if ($(window).scrollTop() > 300) {
+                $('#button').css({ 'bottom': 30, 'right': 30 });
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+        });
+  </script>
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e716edd3712c4c5"></script>
+
+
+  </body>
+</html>
